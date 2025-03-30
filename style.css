@@ -1,0 +1,173 @@
+/* Basic Styles */
+body {
+    font-family: 'Arial', sans-serif; /* Use a web-safe font stack */
+    margin: 0;
+    line-height: 1.6; /* Improve readability */
+    color: #333; /* Dark gray text */
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f0f0f0;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+    display: flex; /* Makes header a flex container */
+    align-items: center; /* Vertically align logo, titles, and nav */
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Occupy full width of the header */
+
+}
+
+
+.logo-title { /* Container for logo and title */
+    display: flex; /* Arrange logo and title horizontally */
+    align-items: center; /* Center logo and title vertically */
+
+}
+
+
+
+.logo {
+	width:100px;
+    height: 100px;
+    margin-right: 20px; /* Add some space between logo and title */
+}
+
+.title-group {   /* Container for h1 and h2 for better spacing */
+    display: flex;
+    flex-direction: column; /* Stack title and subtitle */
+
+}
+
+.title-group h1 {
+    font-size: 1.8em; /* Slightly larger font size */
+    margin: 0; /* Remove default margins */
+}
+
+
+.title-group h2 {
+    font-size: 1.2em; /* Slightly smaller font size for subtitle */
+    margin: 0;
+}
+
+
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Make navigation items horizontal */
+
+}
+
+
+
+nav li {
+    margin-left: 20px; /* Space between nav items */
+}
+
+
+
+nav a { /* Style navigation links */
+    text-decoration: none;
+    color: #333;
+    font-weight: bold; /* Make links bold */
+    transition: color 0.3s ease; /* Smooth color transition on hover */
+}
+
+nav a:hover {
+    color: #0056b3; /* Darker blue on hover */
+
+}
+
+
+
+
+
+
+
+/* About Section */
+.about {
+    padding: 40px 0;
+}
+
+.about img {
+    max-width: 100%;
+    height: 300px;
+    display: block; /* Prevent image from affecting layout */
+    margin: 20px auto; /* Center the image */
+    border-radius: 8px; /* Rounded image corners */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1); /* Add a subtle shadow */
+}
+
+
+
+
+/* Activities Section */
+.activities {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+
+
+.activity-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+
+.activity {
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+
+.activity img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px; /* Space below image */
+
+}
+
+.activity h3 {
+    margin-top: 0; /* Reduce top margin */
+}
+
+
+
+
+/* News Section */
+
+.news {
+    padding: 40px 0;
+}
+
+.news-item {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
